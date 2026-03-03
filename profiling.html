@@ -12,60 +12,71 @@
     </style>
 </head>
 <body>
-    <h2 style="text-align: center; color: #00897B;">Informativa sulla Privacy (Privacy Policy)</h2>
-    <p style="text-align: center; font-style: italic;">Ultimo aggiornamento: 17 Febbraio 2026</p>
+    <h2 style="text-align: center; color: #00897B;">Informativa sulla Profilazione</h2>
+    <p style="text-align: center; font-style: italic;">Ultimo aggiornamento: <span id="update-date"></span></p>
+    <script>
+        const d = new Date(document.lastModified);
+        const opts = { day: 'numeric', month: 'long', year: 'numeric' };
+        document.getElementById('update-date').textContent = d.toLocaleDateString('it-IT', opts);
+    </script>
 
-    <p><span class="highlight">Smart Chef</span> si impegna a proteggere la tua privacy. Questa informativa descrive come raccogliamo, utilizziamo, condividiamo e proteggiamo le tue informazioni personali quando utilizzi la nostra applicazione e i nostri servizi di Intelligenza Artificiale.</p>
+    <h3>COSA INTENDIAMO PER PROFILAZIONE</h3>
+    <p>Per profilazione in <span class="highlight">Smart Chef</span> intendiamo l'utilizzo delle tue informazioni personali e delle tue interazioni con l'Intelligenza Artificiale per analizzare o prevedere le tue preferenze culinarie, i tuoi interessi alimentari e le tue abitudini in cucina. Questo ci consente di rendere l'app un assistente davvero su misura per te.</p>
 
-    <h3>INFORMAZIONI CHE RACCOGLIAMO</h3>
-    <p>Raccogliamo le seguenti informazioni per fornirti un'esperienza culinaria personalizzata:</p>
+    <h3>COME UTILIZZIAMO LA PROFILAZIONE</h3>
+    <p>La profilazione ci permette di:</p>
     <ul>
-        <li><strong>Informazioni personali</strong>: Nome, indirizzo email e dati del profilo forniti tramite Google Login o registrazione diretta.</li>
-        <li><strong>Contenuti dell'utente</strong>: Ricette salvate, categorie personalizzate, preferenze alimentari e cronologia delle importazioni.</li>
-        <li><strong>Immagini e Media</strong>: Foto scattate alla dispensa, al frigorifero o ai piatti per l'elaborazione tramite IA (riconoscimento ingredienti e calcolo calorie).</li>
-        <li><strong>Dati del dispositivo</strong>: Tipo di smartphone, sistema operativo e identificatori unici necessari per la sicurezza e le notifiche push.</li>
+        <li><strong>Personalizzare i suggerimenti</strong>: Proponerti ricette basate sui tuoi gusti e sugli ingredienti che solitamente hai in dispensa.</li>
+        <li><strong>Ottimizzare l'IA</strong>: Migliorare la precisione dell'algoritmo di calcolo calorie e macro in base alle tue ricerche frequenti.</li>
+        <li><strong>Notifiche e Collaborazioni</strong>: In entrambi i piani (Gratis e Premium), potremmo inviarti notifiche push o comunicazioni in-app in collaborazione con i nostri partner. Tali comunicazioni sono basate sulle tue abitudini di spesa, sulle tue preferenze culinarie e sulla tua posizione geografica per offrirti sconti o offerte rilevanti.</li>
+        <li><strong>Contenuti Rilevanti</strong>: Mostrarti funzionalità o promozioni Premium che siano effettivamente utili per il tuo stile di vita.</li>
+        <li><strong>Analisi dei Trend</strong>: Capire quali sono i piatti più amati dalla community per aggiungere nuove capacità all'IA.</li>
     </ul>
 
-    <h3>COME UTILIZZIAMO LE TUE INFORMAZIONI</h3>
-    <p>Utilizziamo le tue informazioni esclusivamente per:</p>
+    <h3>DATI UTILIZZATI PER LA PROFILAZIONE</h3>
+    <p>Per offrirti un'esperienza personalizzata, utilizziamo:</p>
     <ul>
-        <li><strong>Fornire i servizi IA</strong>: Analizzare le tue foto e i tuoi link per generare ricette e stime nutrizionali.</li>
-        <li><strong>Sincronizzazione Cloud</strong>: Permetterti di ritrovare le tue ricette su qualsiasi dispositivo tramite il tuo account.</li>
-        <li><strong>Personalizzazione</strong>: Suggerirti piatti basati sui tuoi gusti e sugli ingredienti che hai a disposizione.</li>
-        <li><strong>Miglioramento tecnico</strong>: Analizzare bug e prestazioni per rendere l'app più veloce e sicura.</li>
-        <li><strong>Comunicazioni di servizio</strong>: Inviarti aggiornamenti importanti sulle funzionalità o sulla sicurezza.</li>
+        <li><strong>Interazioni con l'IA</strong>: Ricette importate da social, link analizzati e foto scattate alla dispensa.</li>
+        <li><strong>Preferenze salvate</strong>: Ricette aggiunte ai preferiti, categorie create e piatti organizzati nel calendario.</li>
+        <li><strong>Dati di utilizzo</strong>: Frequenza d'uso dell'app e funzionalità più utilizzate (es. calcolo calorie vs importazione, uso lista spesa, aperture app, utilizzo dell'IA).</li>
+        <li><strong>Informazioni del profilo</strong>: Dati forniti in fase di registrazione (se presenti), inclusi età e genere.</li>
+        <li><strong>Utilizzo tessere fedeltà</strong>: Quali tessere vengono aperte, con quale frequenza e, se hai fornito il consenso alla posizione, dove ti trovi nel momento dell'apertura. Queste informazioni permettono di costruire un profilo delle abitudini di spesa (es. supermercati preferiti, giorni e orari più frequenti).</li>
+        <li><strong>Posizione geografica contestuale</strong>: Coordinate GPS registrate esclusivamente all'apertura di una tessera specifica (mai in background). Vengono associate al punto vendita corrispondente per analisi aggregate sulle abitudini di acquisto.</li>
     </ul>
 
-    <h3>CONDIVISIONE DELLE INFORMAZIONI</h3>
-    <p>Le tue informazioni sono trattate con la massima riservatezza. Possiamo condividerle solo con:</p>
-    <ul>
-        <li><strong>Google Firebase</strong>: Per l'autenticazione sicura e l'archiviazione del database.</li>
-        <li><strong>Google Gemini API</strong>: Per l'elaborazione dell'intelligenza artificiale (inviamo solo i dati necessari all'analisi richiesta).</li>
-        <li><strong>Autorità competenti</strong>: Solo se strettamente richiesto dalla legge.</li>
-    </ul>
-    
-    <p><strong>Non vendiamo mai le tue informazioni personali o i tuoi contenuti a terze parti per scopi pubblicitari.</strong></p>
+    <h3>BASE LEGALE</h3>
+    <p>Effettuiamo la profilazione sulla base del nostro <span class="highlight">legittimo interesse</span> a fornirti un servizio personalizzato e migliorare l'esperienza utente dell'app. La profilazione è essenziale per il corretto funzionamento delle funzionalità IA di Smart Chef. Puoi opporti al trattamento in qualsiasi momento dalle impostazioni del tuo account nell'app.</p>
 
-    <h3>TECNOLOGIE DI ARCHIVIAZIONE</h3>
-    <p>Smart Chef utilizza tecnologie di archiviazione locale e cloud (Firebase) per garantire che i tuoi dati siano sempre disponibili e protetti. Non utilizziamo cookie di profilazione invasivi, ma solo identificatori tecnici necessari al funzionamento dell'account.</p>
-
-    <h3>I TUOI DIRITTI (GDPR)</h3>
-    <p>In conformità al Regolamento UE 2016/679, hai il diritto di:</p>
+    <h3>I TUOI DIRITTI</h3>
+    <p>In conformità al GDPR, hai il diritto di:</p>
     <ul>
-        <li><strong>Accedere</strong> ai tuoi dati personali memorizzati.</li>
-        <li><strong>Correggere</strong> eventuali informazioni inesatte.</li>
-        <li><strong>Richiedere la cancellazione</strong> totale del tuo account e di tutti i dati associati (funzione disponibile direttamente nelle impostazioni dell'app).</li>
-        <li><strong>Opporti al trattamento</strong> per finalità di marketing.</li>
-        <li><strong>Portabilità</strong>: Ricevere i tuoi dati in un formato leggibile.</li>
+        <li><strong>Opporti al trattamento</strong> per profilazione basato su legittimo interesse.</li>
+        <li><strong>Ottenere dettagli</strong> sui criteri logici utilizzati per la personalizzazione.</li>
+        <li><strong>Opporti</strong> a decisioni basate unicamente su trattamenti automatizzati.</li>
+        <li><strong>Richiedere la cancellazione</strong> dei dati di profilazione associati al tuo account.</li>
+        <li><strong>Limitare il trattamento</strong> dei tuoi dati personali per finalità di profilazione.</li>
     </ul>
 
-    <h3>SICUREZZA DEI DATI</h3>
-    <p>Adottiamo misure di sicurezza di livello enterprise tramite l'infrastruttura Google Cloud per proteggere i tuoi dati da accessi non autorizzati, perdite o alterazioni. Tutte le comunicazioni tra l'app e il server sono criptate (HTTPS).</p>
+    <h3>PERIODO DI CONSERVAZIONE</h3>
+    <p>I dati di profilazione vengono conservati finché il tuo account è attivo. In caso di cancellazione dell'account, questi dati verranno eliminati o resi totalmente anonimi entro 30 giorni, rendendo impossibile ogni associazione futura alla tua identità.</p>
 
-    <h3>MODIFICHE ALLA POLITICA SULLA PRIVACY</h3>
-    <p>Ci riserviamo il diritto di modificare questa informativa per riflettere cambiamenti tecnologici o legislativi. Le modifiche saranno comunicate chiaramente all'interno dell'app.</p>
+    <h3>METRICHE DI PROFILAZIONE INTERNE</h3>
+    <p>Il nostro backend elabora i dati di utilizzo per calcolare metriche interne non visibili all'utente ma usate esclusivamente dall'amministratore della piattaforma per migliorare il servizio:</p>
+    <ul>
+        <li><strong>Engagement score (0–100)</strong>: Misura quanto attivamente utilizzi le funzionalità dell'app (ricette, IA, lista spesa, tessere, aperture).</li>
+        <li><strong>Churn risk</strong>: Stima la probabilità di abbandono dell'app in base all'inattività recente.</li>
+        <li><strong>Conversion potential</strong>: Valuta la probabilità che tu possa trarre vantaggio da un abbonamento Premium in base alle funzionalità che usi più di frequente.</li>
+        <li><strong>Congetture comportamentali</strong>: Osservazioni testuali generate automaticamente (es. "Utente molto attivo", "Possibile abbandono", "Candidato Premium") utili per il monitoraggio interno.</li>
+    </ul>
+    <p>Queste elaborazioni non producono decisioni automatizzate con effetti legali sull'utente e sono accessibili solo dall'amministratore dell'app.</p>
+
+    <h3>DECISIONI AUTOMATIZZATE</h3>
+    <p>L'app utilizza algoritmi per determinare quali contenuti mostrarti prioritariamente. Ad esempio, se importi spesso ricette vegane, l'IA darà priorità a suggerimenti coerenti con questa scelta alimentare. Le metriche interne (engagement, churn risk) non producono effetti legali sull'utente né modificano automaticamente le condizioni del servizio.</p>
+
+    <h3>MODIFICHE ALLA POLITICA</h3>
+    <p>Ci riserviamo il diritto di aggiornare questa politica per riflettere l'evoluzione delle nostre tecnologie IA. Ogni modifica sostanziale ti verrà notificata tramite l'app.</p>
 
     <h3>CONTATTI</h3>
-    <p>Per qualsiasi domanda riguardante la tua privacy o per esercitare i tuoi diritti, contattaci all'indirizzo email: <span class="highlight">support@smartchef.app</span>.</p>
+    <p>Per domande sulla profilazione o per esercitare i tuoi diritti, scrivici a: <span class="highlight">support@smartchef.app</span>.</p>
 </body>
 </html>
