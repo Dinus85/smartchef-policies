@@ -13,12 +13,7 @@
 </head>
 <body>
     <h2 style="text-align: center; color: #00897B;">Informativa sulla Profilazione</h2>
-    <p style="text-align: center; font-style: italic;">Ultimo aggiornamento: <span id="update-date"></span></p>
-    <script>
-        const d = new Date(document.lastModified);
-        const opts = { day: 'numeric', month: 'long', year: 'numeric' };
-        document.getElementById('update-date').textContent = d.toLocaleDateString('it-IT', opts);
-    </script>
+    <p style="text-align: center; font-style: italic;">Ultimo aggiornamento: <span id="update-date">{{AUTO_UPDATE_DATE}}</span></p>
 
     <h3>COSA INTENDIAMO PER PROFILAZIONE</h3>
     <p>Per profilazione in <span class="highlight">Smart Chef</span> intendiamo l'utilizzo delle tue informazioni personali e delle tue interazioni con l'Intelligenza Artificiale per analizzare o prevedere le tue preferenze culinarie, i tuoi interessi alimentari e le tue abitudini in cucina. Questo ci consente di rendere l'app un assistente davvero su misura per te.</p>
