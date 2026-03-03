@@ -13,7 +13,12 @@
 </head>
 <body>
     <h2 style="text-align: center; color: #00897B;">Informativa Marketing Smart Chef</h2>
-    <p style="text-align: center; font-style: italic;">Ultimo aggiornamento: 26 Febbraio 2026</p>
+    <p style="text-align: center; font-style: italic;">Ultimo aggiornamento: <span id="update-date"></span></p>
+    <script>
+        const d = new Date(document.lastModified);
+        const opts = { day: 'numeric', month: 'long', year: 'numeric' };
+        document.getElementById('update-date').textContent = d.toLocaleDateString('it-IT', opts);
+    </script>
 
     <h3>COSA INTENDIAMO PER COMUNICAZIONI MARKETING</h3>
     <p>Le comunicazioni marketing di <span class="highlight">Smart Chef</span> comprendono messaggi promozionali, suggerimenti personalizzati basati sulla tua dispensa, aggiornamenti sulle nuove capacità della nostra Intelligenza Artificiale, offerte per la versione Premium e newsletter culinarie inviate per migliorare la tua esperienza in cucina.</p>
