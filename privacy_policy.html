@@ -13,12 +13,7 @@
 </head>
 <body>
     <h2 style="text-align: center; color: #00897B;">Informativa sulla Privacy (Privacy Policy)</h2>
-    <p style="text-align: center; font-style: italic;">Ultimo aggiornamento: <span id="update-date"></span></p>
-    <script>
-        const d = new Date(document.lastModified);
-        const opts = { day: 'numeric', month: 'long', year: 'numeric' };
-        document.getElementById('update-date').textContent = d.toLocaleDateString('it-IT', opts);
-    </script>
+    <p style="text-align: center; font-style: italic;">Ultimo aggiornamento: <span id="update-date">{{AUTO_UPDATE_DATE}}</span></p>
 
     <p><span class="highlight">Smart Chef</span> si impegna a proteggere la tua privacy. Questa informativa descrive come raccogliamo, utilizziamo, condividiamo e proteggiamo le tue informazioni personali quando utilizzi la nostra applicazione e i nostri servizi di Intelligenza Artificiale.</p>
 
