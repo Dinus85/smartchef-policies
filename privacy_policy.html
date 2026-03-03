@@ -3,78 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; }
-        h3 { color: #2196F3; margin-top: 5px; }
-        p { margin-bottom: 5px; }
-        ul { margin-left: 20px; padding-left: 0; }
-        li { margin-bottom: 3px; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
+        h3 { color: #00897B; margin-top: 25px; border-bottom: 2px solid #E0F2F1; padding-bottom: 5px; text-transform: uppercase; font-size: 1.2em; }
+        p { margin-bottom: 15px; }
+        ul { margin-left: 20px; padding-left: 0; list-style-type: square; }
+        li { margin-bottom: 8px; }
+        .highlight { color: #00897B; font-weight: bold; }
     </style>
 </head>
 <body>
-    <p>SmartChef si impegna a proteggere la tua privacy. Questa informativa sulla privacy descrive come raccogliamo, utilizziamo, condividiamo e proteggiamo le tue informazioni personali quando utilizzi la nostra applicazione.</p>
+    <h2 style="text-align: center; color: #00897B;">Informativa sulla Privacy (Privacy Policy)</h2>
+    <p style="text-align: center; font-style: italic;">Ultimo aggiornamento: 26 Febbraio 2026</p>
+
+    <p><span class="highlight">Smart Chef</span> si impegna a proteggere la tua privacy. Questa informativa descrive come raccogliamo, utilizziamo, condividiamo e proteggiamo le tue informazioni personali quando utilizzi la nostra applicazione e i nostri servizi di Intelligenza Artificiale.</p>
 
     <h3>INFORMAZIONI CHE RACCOGLIAMO</h3>
-    <p>Raccogliamo le seguenti informazioni:</p>
+    <p>Raccogliamo le seguenti informazioni per fornirti un'esperienza culinaria personalizzata:</p>
     <ul>
-        <li>Informazioni personali: nome, cognome, indirizzo email, data di nascita, genere</li>
-        <li>Informazioni sull'account: credenziali di accesso, preferenze</li>
-        <li>Informazioni sull'utilizzo: ricette salvate, cronologia di ricerca, interazioni con l'app</li>
-        <li>Dati del dispositivo: tipo di dispositivo, sistema operativo, identificatori unici</li>
+        <li><strong>Informazioni personali</strong>: Nome, indirizzo email e dati del profilo forniti tramite Google Login o registrazione diretta.</li>
+        <li><strong>Contenuti dell'utente</strong>: Ricette salvate, categorie personalizzate, preferenze alimentari e cronologia delle importazioni.</li>
+        <li><strong>Immagini e Media</strong>: Foto scattate alla dispensa, al frigorifero o ai piatti per l'elaborazione tramite IA (riconoscimento ingredienti e calcolo calorie).</li>
+        <li><strong>Dati del dispositivo</strong>: Tipo di smartphone, sistema operativo e identificatori unici necessari per la sicurezza e le notifiche push.</li>
+        <li><strong>Dati di utilizzo e comportamento</strong>: Frequenza di apertura dell'app, ricette importate/salvate, utilizzo delle funzionalità IA, aggiornamenti alla lista spesa e aperture delle tessere fedeltà. Questi dati vengono salvati su Firebase Firestore nella sotto-collezione <em>analytics</em> del tuo profilo utente.</li>
+        <li><strong>Posizione geografica (opzionale)</strong>: Quando apri una specifica tessera fedeltà nell'apposita sezione dell'app, ti chiediamo il consenso esplicito per rilevare la tua posizione GPS (latitudine e longitudine) al solo scopo di registrare quale punto vendita stai visitando in quel momento. La lettura avviene <strong>una sola volta per ogni apertura della tessera</strong>, non è continua e non avviene in background. Puoi negare o revocare il consenso in qualsiasi momento dalle impostazioni del sistema operativo senza perdere alcuna funzionalità dell'app.</li>
     </ul>
 
     <h3>COME UTILIZZIAMO LE TUE INFORMAZIONI</h3>
-    <p>Utilizziamo le tue informazioni per:</p>
+    <p>Utilizziamo le tue informazioni esclusivamente per:</p>
     <ul>
-        <li>Fornire e migliorare i nostri servizi</li>
-        <li>Personalizzare la tua esperienza all'interno dell'app</li>
-        <li>Comunicare con te riguardo aggiornamenti o promozioni</li>
-        <li>Analizzare come utilizzi la nostra app per migliorarla</li>
-        <li>Rispettare i nostri obblighi legali</li>
+        <li><strong>Fornire i servizi IA</strong>: Analizzare le tue foto e i tuoi link per generare ricette e stime nutrizionali.</li>
+        <li><strong>Sincronizzazione Cloud</strong>: Permetterti di ritrovare le tue ricette su qualsiasi dispositivo tramite il tuo account.</li>
+        <li><strong>Personalizzazione</strong>: Suggerirti piatti basati sui tuoi gusti e sugli ingredienti che hai a disposizione.</li>
+        <li><strong>Miglioramento tecnico</strong>: Analizzare bug e prestazioni per rendere l'app più veloce e sicura.</li>
+        <li><strong>Comunicazioni di servizio</strong>: Inviarti aggiornamenti importanti sulle funzionalità o sulla sicurezza.</li>
+        <li><strong>Analisi comportamentale aggregata</strong>: I dati di utilizzo (frequenza, funzionalità usate, tessere aperte) vengono elaborati dal nostro backend per calcolare metriche interne come il rischio di abbandono e il profilo di coinvolgimento dell'utente. Queste elaborazioni sono visibili esclusivamente dall'amministratore della piattaforma e non vengono condivise con terzi.</li>
+        <li><strong>Analisi della prossimità ai punti vendita</strong>: La posizione registrata all'apertura di una tessera fedeltà viene associata al nome del supermercato o punto vendita corrispondente per comprendere le abitudini di spesa. Questi dati aggregati possono essere usati per personalizzare l'esperienza e, previo tuo consenso separato al marketing, per inviarti offerte rilevanti per i negozi che frequenti.</li>
     </ul>
 
     <h3>CONDIVISIONE DELLE INFORMAZIONI</h3>
-    <p>Possiamo condividere le tue informazioni con:</p>
+    <p>Le tue informazioni sono trattate con la massima riservatezza. Possiamo condividerle solo con:</p>
     <ul>
-        <li>Fornitori di servizi che ci aiutano a gestire l'app</li>
-        <li>Partner commerciali, con il tuo consenso</li>
-        <li>Autorità competenti, quando richiesto dalla legge</li>
-        <li>In caso di fusione, vendita o trasferimento di attività</li>
+        <li><strong>Google Firebase / Firestore</strong>: Per l'autenticazione sicura, l'archiviazione del database e la raccolta degli eventi di utilizzo.</li>
+        <li><strong>Google Cloud Run</strong>: Per l'esecuzione del backend applicativo che elabora le richieste e gli insight comportamentali.</li>
+        <li><strong>Google Gemini API</strong>: Per l'elaborazione dell'intelligenza artificiale (inviamo solo i dati necessari all'analisi richiesta).</li>
+        <li><strong>Autorità competenti</strong>: Solo se strettamente richiesto dalla legge.</li>
     </ul>
     
-    <p>Non vendiamo mai le tue informazioni personali a terze parti.</p>
+    <p><strong>Non vendiamo mai le tue informazioni personali o i tuoi contenuti a terze parti per scopi pubblicitari.</strong></p>
 
-    <h3>COOKIES E TECNOLOGIE SIMILI</h3>
-    <p>SmartChef utilizza cookies e tecnologie simili per fornire, proteggere e migliorare la nostra app. I cookies sono piccoli file di testo memorizzati sul tuo dispositivo.</p>
+    <h3>TECNOLOGIE DI ARCHIVIAZIONE</h3>
+    <p>Smart Chef utilizza tecnologie di archiviazione locale e cloud (Firebase) per garantire che i tuoi dati siano sempre disponibili e protetti. Non utilizziamo cookie di profilazione invasivi, ma solo identificatori tecnici necessari al funzionamento dell'account.</p>
 
-    <h3>TIPI DI COOKIES UTILIZZATI</h3>
+    <h3>I TUOI DIRITTI (GDPR)</h3>
+    <p>In conformità al Regolamento UE 2016/679, hai il diritto di:</p>
     <ul>
-        <li>Cookies essenziali: necessari per il funzionamento dell'app</li>
-        <li>Cookies analitici: ci aiutano a capire come interagisci con l'app</li>
-        <li>Cookies funzionali: ricordano le tue preferenze e personalizzazioni</li>
-        <li>Cookies di marketing: utilizzati per scopi pubblicitari (solo con il tuo consenso)</li>
-    </ul>
-
-    <h3>COME GESTIRE I COOKIES</h3>
-    <p>Puoi gestire le tue preferenze sui cookies attraverso le impostazioni del tuo dispositivo o browser. Tuttavia, la disabilitazione di alcuni cookies potrebbe influire sulla tua esperienza d'uso dell'app.</p>
-
-    <h3>I TUOI DIRITTI</h3>
-    <p>Hai il diritto di:</p>
-    <ul>
-        <li>Accedere alle tue informazioni personali</li>
-        <li>Correggere informazioni inesatte</li>
-        <li>Richiedere la cancellazione dei tuoi dati</li>
-        <li>Opporti al trattamento dei tuoi dati</li>
-        <li>Richiedere la limitazione del trattamento</li>
-        <li>Ricevere i tuoi dati in un formato leggibile</li>
+        <li><strong>Accedere</strong> ai tuoi dati personali memorizzati.</li>
+        <li><strong>Correggere</strong> eventuali informazioni inesatte.</li>
+        <li><strong>Richiedere la cancellazione</strong> totale del tuo account e di tutti i dati associati (funzione disponibile direttamente nelle impostazioni dell'app).</li>
+        <li><strong>Opporti al trattamento</strong> per finalità di marketing.</li>
+        <li><strong>Portabilità</strong>: Ricevere i tuoi dati in un formato leggibile.</li>
     </ul>
 
     <h3>SICUREZZA DEI DATI</h3>
-    <p>Adottiamo misure di sicurezza appropriate per proteggere le tue informazioni personali da accessi non autorizzati, alterazioni, divulgazioni o distruzioni.</p>
+    <p>Adottiamo misure di sicurezza di livello enterprise tramite l'infrastruttura Google Cloud per proteggere i tuoi dati da accessi non autorizzati, perdite o alterazioni. Tutte le comunicazioni tra l'app e il server sono criptate (HTTPS).</p>
 
     <h3>MODIFICHE ALLA POLITICA SULLA PRIVACY</h3>
-    <p>Ci riserviamo il diritto di modificare questa politica sulla privacy in qualsiasi momento. Le modifiche entreranno in vigore dopo la pubblicazione nell'app.</p>
+    <p>Ci riserviamo il diritto di modificare questa informativa per riflettere cambiamenti tecnologici o legislativi. Le modifiche saranno comunicate chiaramente all'interno dell'app.</p>
 
     <h3>CONTATTI</h3>
-    <p>Per domande riguardanti la nostra politica sulla privacy, contattaci all'indirizzo email privacy@smartchef.com.</p>
+    <p>Per qualsiasi domanda riguardante la tua privacy o per esercitare i tuoi diritti, contattaci all'indirizzo email: <span class="highlight">support@smartchef.app</span>.</p>
 </body>
 </html>
