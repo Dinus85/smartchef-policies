@@ -21,23 +21,27 @@
     <p>Raccogliamo le seguenti informazioni per fornirti un'esperienza culinaria personalizzata:</p>
     <ul>
         <li><strong>Informazioni personali</strong>: Nome, indirizzo email e dati del profilo forniti tramite Google Login o registrazione diretta.</li>
-        <li><strong>Contenuti dell'utente</strong>: Ricette salvate, categorie personalizzate, preferenze alimentari e cronologia delle importazioni.</li>
+        <li><strong>Contenuti dell'utente</strong>: Ricette salvate, categorie personalizzate, preferenze alimentari, cronologia delle importazioni e informazioni tecniche necessarie a ricostruire un'importazione riuscita o fallita.</li>
         <li><strong>Immagini e Media</strong>: Foto scattate alla dispensa, al frigorifero o ai piatti per l'elaborazione tramite IA (riconoscimento ingredienti e calcolo calorie).</li>
         <li><strong>Dati del dispositivo</strong>: Tipo di smartphone, sistema operativo e identificatori unici necessari per la sicurezza e le notifiche push.</li>
         <li><strong>Dati di utilizzo e comportamento</strong>: Frequenza di apertura dell'app, ricette importate/salvate, utilizzo delle funzionalità IA, aggiornamenti alla lista spesa e aperture delle tessere fedeltà. Questi dati vengono salvati su Firebase Firestore nella sotto-collezione <em>analytics</em> del tuo profilo utente.</li>
+        <li><strong>Dati del confronto offerte</strong>: Quando utilizzi la funzione di confronto offerte, trattiamo la località inserita, i prodotti presenti nella lista della spesa, i supermercati analizzati e il risultato del confronto (ad esempio negozio migliore, prodotti trovati, risparmio stimato e storico dei confronti). Se indichi un prodotto con descrizione generica (ad esempio <em>"formaggio"</em> o <em>"tonno"</em>), la ricerca viene eseguita come categoria generica e non come ricerca di uno specifico marchio o SKU; il sistema può espandere o interpretare tecnicamente il termine per cercare varianti compatibili.</li>
+        <li><strong>Dati dell'import social/web</strong>: Quando importi una ricetta da un link o da un contenuto social, possono essere trattati l'URL, il testo condiviso, l'immagine di anteprima, metadati del contenuto ed eventuali trascrizioni tecniche necessarie per estrarre ingredienti e procedimento.</li>
         <li><strong>Posizione geografica (opzionale)</strong>: Quando apri una specifica tessera fedeltà nell'apposita sezione dell'app, ti chiediamo il consenso esplicito per rilevare la tua posizione GPS (latitudine e longitudine) al solo scopo di registrare quale punto vendita stai visitando in quel momento. La lettura avviene <strong>una sola volta per ogni apertura della tessera</strong>, non è continua e non avviene in background. Puoi negare o revocare il consenso in qualsiasi momento dalle impostazioni del sistema operativo senza perdere alcuna funzionalità dell'app.</li>
     </ul>
 
     <h3>COME UTILIZZIAMO LE TUE INFORMAZIONI</h3>
     <p>Utilizziamo le tue informazioni esclusivamente per:</p>
     <ul>
-        <li><strong>Fornire i servizi IA</strong>: Analizzare le tue foto e i tuoi link per generare ricette e stime nutrizionali.</li>
+        <li><strong>Fornire i servizi IA</strong>: Analizzare le tue foto e i tuoi link per generare ricette, estrarre ingredienti/procedimento e fornire stime nutrizionali.</li>
+        <li><strong>Fornire il confronto offerte</strong>: Confrontare i prodotti della tua lista spesa con offerte e volantini disponibili, tenendo conto della località inserita e dei supermercati supportati.</li>
         <li><strong>Sincronizzazione Cloud</strong>: Permetterti di ritrovare le tue ricette su qualsiasi dispositivo tramite il tuo account.</li>
         <li><strong>Personalizzazione</strong>: Suggerirti piatti basati sui tuoi gusti e sugli ingredienti che hai a disposizione.</li>
         <li><strong>Miglioramento tecnico</strong>: Analizzare bug e prestazioni per rendere l'app più veloce e sicura.</li>
         <li><strong>Comunicazioni di servizio</strong>: Inviarti aggiornamenti importanti sulle funzionalità o sulla sicurezza.</li>
         <li><strong>Analisi comportamentale aggregata</strong>: I dati di utilizzo (frequenza, funzionalità usate, tessere aperte) vengono elaborati dal nostro backend per calcolare metriche interne come il rischio di abbandono e il profilo di coinvolgimento dell'utente. Queste elaborazioni sono visibili esclusivamente dall'amministratore della piattaforma e non vengono condivise con terzi.</li>
         <li><strong>Analisi della prossimità ai punti vendita</strong>: La posizione registrata all'apertura di una tessera fedeltà viene associata al nome del supermercato o punto vendita corrispondente per comprendere le abitudini di spesa. Questi dati aggregati possono essere usati per personalizzare l'esperienza e, previo tuo consenso separato al marketing, per inviarti offerte rilevanti per i negozi che frequenti.</li>
+        <li><strong>Ottimizzazione tecnica e cache</strong>: Per ridurre richieste ripetute verso le sorgenti dei volantini, il backend può memorizzare temporaneamente cache tecniche dei flyer, del testo estratto, del risultato OCR e dei risultati di ricerca prodotto. Tali cache sono usate per efficienza operativa e non per vendere o diffondere i tuoi dati personali.</li>
     </ul>
 
     <h3>CONDIVISIONE DELLE INFORMAZIONI</h3>
@@ -46,13 +50,15 @@
         <li><strong>Google Firebase / Firestore</strong>: Per l'autenticazione sicura, l'archiviazione del database e la raccolta degli eventi di utilizzo.</li>
         <li><strong>Google Cloud Run</strong>: Per l'esecuzione del backend applicativo che elabora le richieste e gli insight comportamentali.</li>
         <li><strong>Google Gemini API</strong>: Per l'elaborazione dell'intelligenza artificiale (inviamo solo i dati necessari all'analisi richiesta).</li>
+        <li><strong>Servizi tecnici di trascrizione o parsing</strong>: Per alcuni import social o contenuti multimediali possiamo utilizzare servizi tecnici dedicati alla trascrizione o all'estrazione di metadati/contenuti, limitatamente ai dati necessari a tentare l'importazione della ricetta.</li>
+        <li><strong>Sorgenti pubbliche o ufficiali dei supermercati</strong>: Quando richiedi un confronto offerte, il backend può interrogare pagine promozionali, volantini o API pubbliche/ufficiali dei supermercati supportati utilizzando i soli dati tecnici necessari alla ricerca (ad esempio località e termini di prodotto, spesso in forma generica). Il tuo identificativo account non viene inviato a tali sorgenti come parte della ricerca.</li>
         <li><strong>Autorità competenti</strong>: Solo se strettamente richiesto dalla legge.</li>
     </ul>
     
     <p><strong>Non vendiamo mai le tue informazioni personali o i tuoi contenuti a terze parti per scopi pubblicitari.</strong></p>
 
     <h3>TECNOLOGIE DI ARCHIVIAZIONE</h3>
-    <p>Smart Chef utilizza tecnologie di archiviazione locale e cloud (Firebase) per garantire che i tuoi dati siano sempre disponibili e protetti. Non utilizziamo cookie di profilazione invasivi, ma solo identificatori tecnici necessari al funzionamento dell'account.</p>
+    <p>Smart Chef utilizza tecnologie di archiviazione locale e cloud (Firebase) per garantire che i tuoi dati siano sempre disponibili e protetti. Possiamo inoltre utilizzare cache tecniche lato backend per analisi dei volantini e confronti offerte. Non utilizziamo cookie di profilazione invasivi, ma solo identificatori tecnici necessari al funzionamento dell'account e del servizio.</p>
 
     <h3>I TUOI DIRITTI (GDPR)</h3>
     <p>In conformità al Regolamento UE 2016/679, hai il diritto di:</p>
