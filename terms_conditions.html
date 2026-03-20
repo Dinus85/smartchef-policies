@@ -21,25 +21,31 @@
     <h3>1. DESCRIZIONE DEL SERVIZIO E VERSIONI</h3>
     <p>Smart Chef è un assistente culinario basato su intelligenza artificiale disponibile in due modalità:</p>
     <ul>
-        <li><span class="highlight">Versione Gratis</span>: Include pubblicità prima dell'apertura delle ricette e tra le ricette salvate, limite di 3 tessere salvate nella sezione tessere, massimo 3 importazioni dal web a settimana (import social non disponibile) e massimo 1 aggiunta ricetta→spesa a settimana.</li>
-        <li><span class="premium">Versione Premium</span>: Offre un'esperienza senza pubblicità, IA ricette e calcolo calorie illimitati, funzione "Aggiungi da ricetta" alla spesa e Modalità Cucina (schermo sempre attivo).</li>
+        <li><span class="highlight">Versione Gratis</span>: Include pubblicità prima dell'apertura delle ricette e tra le ricette salvate, limite di 3 tessere fedeltà salvate, massimo 3 importazioni dal web a settimana e 6 al mese, import social non disponibile, massimo 1 aggiunta ricetta→spesa a settimana e funzione di confronto offerte non disponibile.</li>
+        <li><span class="premium">Versione Premium</span>: Offre un'esperienza senza pubblicità e accesso alle funzioni Premium effettivamente abilitate nell'app e nel backend, inclusi strumenti AI, import social, confronto offerte sulla lista della spesa e relative funzioni accessorie, secondo i limiti tecnici e di piano eventualmente in vigore.</li>
     </ul>
 
-    <h3>2. DISCLAIMER SULL'INTELLIGENZA ARTIFICIALE (AI)</h3>
-    <p>L'utente riconosce che Smart Chef utilizza modelli avanzati di IA (Google Gemini). Pertanto:</p>
+    <h3>2. DISCLAIMER SULL'INTELLIGENZA ARTIFICIALE (AI) E SUL CONFRONTO OFFERTE</h3>
+    <p>L'utente riconosce che Smart Chef utilizza modelli avanzati di IA e servizi tecnici collegati (ad esempio Google Gemini per l'estrazione/interpretazione di ricette e contenuti, oltre a servizi di trascrizione o parsing tecnico quando necessari per import da social o contenuti multimediali) e, per il confronto offerte, sorgenti volantino pubbliche o ufficiali dei supermercati supportati. Pertanto:</p>
     <ul>
         <li><strong>Accuratezza</strong>: L'AI può commettere errori nell'estrazione di ingredienti o passaggi. È responsabilità dell'utente verificare la ricetta prima della preparazione.</li>
         <li><strong>Salute e Allergie</strong>: L'app non garantisce l'assenza di allergeni. I valori nutrizionali sono <span class="highlight">stime approssimative</span> e non sostituiscono il parere di un medico o nutrizionista.</li>
+        <li><strong>Confronto offerte</strong>: I risultati del confronto offerte sono basati su dati promozionali e volantini disponibili al momento dell'analisi. Prezzi, disponibilità, assortimento, punto vendita effettivo, confezioni e validità temporale possono cambiare o non coincidere perfettamente con il negozio visitato dall'utente.</li>
+        <li><strong>Ricerca generica dei prodotti</strong>: Se l'utente inserisce un prodotto in forma generica (ad esempio <em>"formaggio"</em> o <em>"tonno"</em>), la ricerca viene eseguita in forma generica e non su uno specifico marchio, formato o SKU. Smart Chef può espandere o interpretare il termine per intercettare varianti compatibili (ad esempio tagli, formati o diciture promozionali coerenti), ma il risultato resta una ricerca tecnica di compatibilità e non una promessa di corrispondenza perfetta con l'intenzione originaria dell'utente.</li>
+        <li><strong>Normalizzazione dei risultati</strong>: Quando il volantino riporta confezioni o unità diverse rispetto alla richiesta dell'utente, Smart Chef può normalizzare il confronto per confezione, unità standard o quantità comparabile; di conseguenza il risultato mostrato è una stima tecnica di confronto e non una garanzia commerciale.</li>
+        <li><strong>OCR e normalizzazione testi</strong>: Alcuni volantini o contenuti possono essere letti tramite estrazione testo, OCR o normalizzazione automatica di diciture promozionali; per questo il nome prodotto mostrato nell'app può risultare adattato o ripulito rispetto alla grafica originale del volantino.</li>
     </ul>
 
-    <h3>3. UTILIZZO DI CONTENUTI TERZI</h3>
-    <p>L'app permette di importare ricette da siti web e social media (YouTube, Instagram, ecc.). L'utente si impegna a utilizzare tali funzioni nel rispetto del diritto d'autore. Smart Chef non è responsabile per la disponibilità o l'accuratezza dei contenuti esterni importati.</p>
+    <h3>3. UTILIZZO DI CONTENUTI E SORGENTI TERZE</h3>
+    <p>L'app permette di importare ricette da siti web e social media (YouTube, Instagram, TikTok, Facebook e simili) e di confrontare offerte tramite volantini e pagine promozionali di soggetti terzi. Per tali funzioni possono essere utilizzati servizi tecnici di supporto per estrazione metadata, trascrizione o parsing del contenuto condiviso. L'utente si impegna a utilizzare tali funzioni nel rispetto del diritto d'autore e delle condizioni dei servizi sorgente. Smart Chef non è responsabile per la disponibilità, continuità o accuratezza dei contenuti e delle promozioni provenienti da fonti esterne.</p>
 
-    <h3>4. RACCOLTA DATI DI UTILIZZO E POSIZIONE</h3>
-    <p>Utilizzando Smart Chef, l'utente accetta che vengano raccolti dati anonimi e aggregati sull'uso dell'applicazione (ricette importate, funzionalità usate, frequenza di accesso) al fine di migliorare il servizio. In aggiunta:</p>
+    <h3>4. RACCOLTA DATI DI UTILIZZO, CONFRONTO OFFERTE E POSIZIONE</h3>
+    <p>Utilizzando Smart Chef, l'utente accetta che vengano raccolti dati tecnici e di utilizzo sull'applicazione (ad esempio ricette importate, funzionalità usate, frequenza di accesso, storico dei confronti offerte) al fine di fornire e migliorare il servizio. In aggiunta:</p>
     <ul>
         <li><strong>Posizione GPS</strong>: L'app può richiedere l'accesso alla posizione geografica <strong>esclusivamente nel momento in cui l'utente apre una tessera fedeltà</strong>. Tale richiesta è soggetta a consenso esplicito runtime (il sistema operativo mostrerà una finestra di autorizzazione). Il consenso può essere revocato in qualsiasi momento dalle impostazioni del dispositivo senza perdere le funzionalità base dell'app.</li>
         <li><strong>Tracciamento eventi</strong>: Vengono registrati su Firebase Firestore eventi come apertura ricette, utilizzo IA, aggiornamento lista spesa e apertura tessere fedeltà. Questi dati sono associati all'account dell'utente e visibili esclusivamente all'amministratore della piattaforma.</li>
+        <li><strong>Dati del confronto offerte</strong>: Per eseguire il confronto offerte possono essere trattati la località indicata, i prodotti inseriti nella lista spesa, i supermercati selezionati e il risultato del confronto. I prodotti possono essere trattati come categorie generiche se la descrizione inserita dall'utente è generica; il backend può anche salvare cache tecniche di parsing dei flyer per evitare analisi ripetute della stessa sorgente.</li>
+        <li><strong>Dati dell'import ricette</strong>: Quando importi ricette dal web o dai social, possono essere trattati URL condivisi, testo accompagnatorio, thumbnail, eventuale trascrizione audio/video o metadati del contenuto, limitatamente a quanto necessario per tentare l'estrazione della ricetta.</li>
         <li><strong>Analisi comportamentale interna</strong>: Il backend elabora i dati di utilizzo per generare metriche interne (engagement, rischio abbandono) utilizzate esclusivamente per il monitoraggio e il miglioramento del servizio. Tali metriche non producono effetti legali sull'utente.</li>
     </ul>
 
